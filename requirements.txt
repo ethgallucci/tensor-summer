@@ -1,0 +1,22 @@
+absl-py==1.0.0
+astor==0.8.1
+black==22.3.0
+gast==0.5.3
+h5py==3.6.0
+Jinja2==3.1.2
+keras==2.8.0
+Keras-Preprocessing==1.1.2
+kiwisolver==1.4.2
+matplotlib==3.5.2
+numpy==1.22.3
+pandas==1.4.2
+protobuf==3.20.1
+PyYAML==6.0
+seaborn==0.11.2
+tensorboard==2.8.0
+tensorboard-data-server==0.6.1
+tensorboard-plugin-wit==1.8.1
+tensorflow==2.8.0
+tensorflow-docs @ git+https://github.com/tensorflow/docs@80704900e59b183c6d3792e60bd09456fddea133
+tensorflow-io-gcs-filesystem==0.25.0
+tf-estimator-nightly==2.8.0.dev2021122109
