@@ -47,7 +47,7 @@ test_dataset = dataset.drop(train_dataset.index)
 # Inspect the data
 sns_plot = sns.pairplot(
     train_dataset[["MPG", "Cylinders", "Displacement", "Weight"]], diag_kind="kde"
-)
+).savefig('./regression/clean_data_sns.png')
 
 # Split features from labels
 train_features = train_dataset.copy()
