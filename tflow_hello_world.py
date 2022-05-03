@@ -38,8 +38,5 @@ model.evaluate(
 )  # Checks the model for performance, usually on a 'validation-set' or 'test-set'
 
 # If you want your model to return a probability, you can wrap the trained model, and attach the softmax to it
-probability_model = tf.keras.Sequential([
-  model,
-  tf.keras.layers.Softmax()
-])
+probability_model = tf.keras.Sequential([model, tf.keras.layers.Softmax()])
 probability_model(x_test[:5])

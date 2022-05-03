@@ -75,6 +75,6 @@ model.compile(
 model.fit(train_images, train_labels, epochs=10)
 
 # Evaluate the model
-test_loss, test_acc = model.evaluate(test_images,  test_labels, verbose=2)
+test_loss, test_acc = model.evaluate(test_images, test_labels, verbose=2)
 
-print('\nTest accuracy:', test_acc)
+print("\nTest accuracy:", test_acc)
