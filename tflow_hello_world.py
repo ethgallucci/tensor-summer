@@ -2,7 +2,7 @@ import tensorflow as tf
 
 print("Tensorflow version: ", tf.__version__)
 
-# Load a dataset
+# Load a dataset: MNIST handwritten digits
 mnist = tf.keras.datasets.mnist
 
 (x_train, y_train), (x_test, y_test) = mnist.load_data()
