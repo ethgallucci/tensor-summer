@@ -53,7 +53,7 @@ tuner = kt.Hyperband(
     objective="val_accuracy",
     max_epochs=10,
     factor=3,
-    directory="my_dir",
+    directory="./tuning/tuning_trials",
     project_name="intro_to_kt",
 )
 
