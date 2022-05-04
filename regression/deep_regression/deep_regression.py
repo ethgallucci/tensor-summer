@@ -134,6 +134,6 @@ plot_horsepower(x, y)
 
 # Collect the results on the test set for later
 test_results = {}
-test_results['dnn_horsepower_model'] = dnn_horsepower_model.evaluate(
-  test_features['Horsepower'], test_labels, verbose=0
+test_results["dnn_horsepower_model"] = dnn_horsepower_model.evaluate(
+    test_features["Horsepower"], test_labels, verbose=0
 )

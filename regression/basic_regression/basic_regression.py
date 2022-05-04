@@ -47,7 +47,7 @@ test_dataset = dataset.drop(train_dataset.index)
 # Inspect the data
 sns_plot = sns.pairplot(
     train_dataset[["MPG", "Cylinders", "Displacement", "Weight"]], diag_kind="kde"
-).savefig('./regression/clean_data_sns.png')
+).savefig("./regression/clean_data_sns.png")
 
 # Split features from labels
 train_features = train_dataset.copy()
@@ -106,7 +106,7 @@ print("\n\nAfter 100 epochs: ", hist.tail())
 
 
 def plot_loss(history, filename):
-    path2file = f'./regression/basic_regression/{filename}'
+    path2file = f"./regression/basic_regression/{filename}"
     plt.clf()
     plt.plot(history.history["loss"], label="loss")
     plt.plot(history.history["val_loss"], label="val_loss")
@@ -118,7 +118,7 @@ def plot_loss(history, filename):
     plt.savefig(path2file)
 
 
-plot_loss(history, 'single_var_loss.png')
+plot_loss(history, "single_var_loss.png")
 
 # Collect the results on the test set for later
 test_results = {}
