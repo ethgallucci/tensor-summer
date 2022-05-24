@@ -58,7 +58,7 @@ model = tf.keras.Sequential(
         # transforms the format of the images from a two-dimensional array (of 28 by 28 pixels) to a one-dimensional array (of 28 * 28 = 784 pixels)
         tf.keras.layers.Flatten(input_shape=(28, 28)),
         # Densely connected 128 neuron layer
-        tf.keras.layers.Dense(128, activation="relu"),
+        tf.keras.layers.Dense(128, activation=tf.nn.relu),
         # Returns a logits array with len 10
         tf.keras.layers.Dense(10),
     ]
